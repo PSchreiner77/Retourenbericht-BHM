@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2019BEEE-EE9E-451D-952C-54DCC7807C86}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Retourenbericht</RootNamespace>
+    <AssemblyName>WeekTXT_erstellen</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WeekTXT_erstellen.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WeekTXT_erstellen.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Klassen\Config.vb" />
+    <Compile Include="Klassen\Dateifunktionen.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Module1.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Dateien\WEEK1.BAT" />
+    <None Include="bin\Debug\Dateien\WEEK2.BAT" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Dateien\FF.TXT" />
+    <Content Include="bin\Debug\Dateien\week.txt" />
+    <Content Include="bin\Debug\Dateien\WEEKR180.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR190.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR195.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR200.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR205.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR210.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR215.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR225.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR230.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR235.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR240.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR245.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR250.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR255.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR265.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR270.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR280.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR285.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR295.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR300.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR305.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR310.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR315.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR320.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR325.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR335.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR340.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR345.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR350.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR360.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR365.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR370.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR375.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR390.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR395.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR401.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR405.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR411.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR420.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR425.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR430.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR435.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR445.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR455.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR460.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR465.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR490.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR705.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR725.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR730.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR735.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR740.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR750.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR755.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR770.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR775.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR780.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR785.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR815.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR830.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR850.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR855.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKR860.TXT" />
+    <Content Include="bin\Debug\Dateien\WEEKRXXX.TXT" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formulare\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

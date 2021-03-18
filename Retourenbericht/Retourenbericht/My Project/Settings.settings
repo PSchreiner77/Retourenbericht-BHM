@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="SortierListeFilialen" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SortierlisteFilialenStandard" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"815; 830; 850; 855; 860; 420; 285; 365; 425; 205; 315; 460; 465; 215; 230; 295; 740; 390; 360; 350; 265; 250; 411; 395; 200; 195; 210; 300; 490; 430; 705; 750; 755; 401; 345; 310; 735; 405; 280; 435; 455; 445; 240; 190; 725; 785; 340; 370; 235; 180; 775; 780; 225; 270; 255; 245; 730; 220; 320; 325; 335; 375; 770; 305</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
